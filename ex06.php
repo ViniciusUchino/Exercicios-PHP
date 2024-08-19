@@ -41,7 +41,7 @@ if ($_POST) {
 
     $total = Calcular_Total($Taxa_funcionario, $Horas_prevista, $Custos_adicionais);
     
-    echo "<p>Custo total é de: R$ " . number_format($total, 2, ',', '.') . "</p>";
+    echo "Custo total é de: R$ " . number_format($total, 2, ',', '.') . ";
 }
 ?>
 
