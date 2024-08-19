@@ -42,10 +42,10 @@ if ($_POST) {
     $Ferias = CalcularFerias($Tempo_servico);
 
     if ($Ferias > 0) {
-        echo "<p>Funcionário: $Nome_Funcionario</p>";
-        echo "<p>Dias de férias: $Ferias</p>";
+        echo "Funcionário: $Nome_Funcionario";
+        echo "Dias de férias: $Ferias";
     } else {
-        echo "<p>Férias não permitidas. Horas trabalhadas insuficientes.</p>";
+        echo "Férias não permitidas. Horas trabalhadas insuficientes.";
     }
 }
 ?>
