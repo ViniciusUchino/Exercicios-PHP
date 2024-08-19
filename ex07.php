@@ -61,13 +61,13 @@ if ($_POST) {
 
     $desempenho = calcularDesempenho($prazo, $atividades_total, $atividades_concluidas, $produtividade);
 
-    echo "<h3>Resultado da Simulação:</h3>";
-    echo "<p>{$desempenho['status']}</p>";
-    echo "<p>Atividades restantes: {$desempenho['atividades_restantes']}</p>";
-    echo "<p>Dias necessários para concluir o projeto: {$desempenho['dias_necessarios']}</p>";
+    echo "Resultado da Simulação:";
+    echo "{$desempenho['status']}";
+    echo "Atividades restantes: {$desempenho['atividades_restantes']}";
+    echo "Dias necessários para concluir o projeto: {$desempenho['dias_necessarios']}";
 
     if ($desempenho['dias_necessarios'] > $prazo) {
-        echo "<p>Você precisará de mais {$desempenho['dias_extras']} dias além do prazo original.</p>";
+        echo "Você precisará de mais {$desempenho['dias_extras']} dias além do prazo original.";
     }
 }
 ?>
