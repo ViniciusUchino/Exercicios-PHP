@@ -65,16 +65,16 @@ if ($_POST) {
     
     if ($Permissao_hora <= $Hora_disponivel) {
         if ($Experiencia >= $complexidade) {
-        echo "<h4>Funcionário: $Funcionario </h4>";
-        echo "<p>Nome da tarefa: $Nome_tarefa </p>";
-        echo "<p>Complexidade: $complexidade </p>";
-        echo "<p>Horas da tarefa: $Horas_tarefa </p>";}
+        echo "Funcionário: $Funcionario ";
+        echo "Nome da tarefa: $Nome_tarefa ";
+        echo "Complexidade: $complexidade";
+        echo "Horas da tarefa: $Horas_tarefa ";}
         else {
-            echo "<p>Nivel insuficiente para o trabalho!</p>";
+            echo "Nivel insuficiente para o trabalho!";
         }
     }
     else {
-        echo "<p>Horas disponíveis insuficientes para este trabalho!</p>";
+        echo "Horas disponíveis insuficientes para este trabalho!";
     }
 }
 ?>
