@@ -54,10 +54,9 @@ if ($_POST) {
     $desempenho = ($_POST["desempenho"]);
 
     $bonus = CalcularBonus($lucro_empresa, $nome_funcionario, $desempenho);
-    echo "<h4>Funcionário: $nome_funcionario </h4>";
-    echo "<p>Desempenho: $desempenho </p>";
-    echo "<p>Bônus Calculado: R$ " . number_format($bonus, 2, ',', '.') . "</p>";
-    echo "</div>";
+    echo "Funcionário: $nome_funcionario";
+    echo "Desempenho: $desempenho";
+    echo "Bônus Calculado: R$ " . number_format($bonus, 2, ',', '.') . ";
 }
 
 
